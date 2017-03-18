@@ -1,0 +1,32 @@
+{
+  "name": "hanye-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node -v",
+    "pack": "./node_modules/.bin/webpack  --watch --devtool eval",
+    "dev": "./node_modules/.bin/webpack-dev-server --config webpack.dev.config.js",
+    "push": "git add . && git commit -m'change' && git push"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.23.1",
+    "babel-loader": "^6.3.2",
+    "babel-preset-env": "^1.1.8",
+    "babel-preset-react": "^6.23.0",
+    "css-loader": "^0.26.1",
+    "file-loader": "^0.10.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^2.4.1"
+  },
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2"
+  }
+}

@@ -1,6 +1,7 @@
 import React from "react"
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import Header from "./header.js"
+import getMuiTheme from 'material-ui/styles/getMuiTheme';
 
 
 class App extends React.Component{
@@ -11,8 +12,9 @@ class App extends React.Component{
     }
   }
   render(){
+    console.log(getMuiTheme());
     return(
-      <MuiThemeProvider>
+      <MuiThemeProvider muiTheme={getMuiTheme()}>
         <Header/>
       </MuiThemeProvider>
     )

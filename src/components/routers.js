@@ -11,7 +11,7 @@ class Routers extends React.Component{
       <Router history={hashHistory}>
         <Route path="/" component={App}>
           <IndexRoute/>
-        
+
 
         </Route>
       </Router>
